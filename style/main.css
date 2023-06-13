@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+ ::selection{
+ 	color: white;
+ 	background-color: #6db784;
+ }
+
+body{
+	font-family:  Varela Round;
+	background-color: hsl(210 46% 95%) ; /*#f3f3f3;*/
+	width: min(100%, 2000px);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; 
+	}
+
+/* A1 nav bar u aw nvisina sari */
+
+.quote-container
+{ 
+	text-align: center; 
+	padding: 0.9rem; 
+	display: none;
+	font-size:clamp(0.9rem, 2vw, 1.25rem); 
+	font-weight: 600;
+}
+
+.quote::before{
+	content: '“ ' ;
+}
+
+.quote::after{
+	content: ' ” ' ; 
+}
+
+/*start A3 last Projects */
+
+#mainLastProject{
+	max-width: 70%;  
+	margin:2.5rem auto;   
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#lastProjectCaption, #newsCaption{ 
+	font-weight: 900; 
+	font-size: 1.87rem; 
+	margin: auto;
+ 	text-align: center;
+	position:relative;
+	width:max-content;
+ 	}
+
+	 #lastProjectCaption::before, #newsCaption::before{
+		content:'';
+		position:absolute;
+		bottom:-0.4rem;
+		left:0;
+		right:0;
+		margin:auto;
+		width:100%;
+		height:0.3rem;
+		background-color:black;
+	 }
+
+	.lastProject {
+	background-color: white;
+	width: 31.82rem;
+	height: 31.25rem;  
+	padding: 10px;
+	margin: 20px 10px;	 
+	overflow: hidden; 
+	box-shadow:5px 5px 10px rgba(0, 0, 0, 0.4); 
+	border-radius: 10px;
+	cursor: pointer; 
+}
+
+.boxIMG:hover {
+	transform: scale(1.11) ; 
+}
+
+.boxIMG{
+	width: 100%;
+	height: 40%; 
+	transition: transform 0.1s; 
+}
+
+.projectName{ 
+	text-align: left; 
+	font-size: 1.56rem; 
+	font-weight: bold; }
+
+.projectDescription{ text-align: left; }
+
+.projectDate{ 
+	margin-top:10px; 
+	font-weight:bold; 
+	text-transform: uppercase; }
+
+
+.loadProjectBT{ 
+	text-align: center; 
+}
+#loadProjectBT{
+	background-color: #98d4d2;
+	color: white;
+	border-radius: 10px;
+	border-color: #98d4d2;
+	font-size: 30px;
+	cursor: pointer;
+	transition: transform 0.1s;
+}
+#loadProjectBT:hover { transform: scale(1.2); }
+
+/* end A3 last Projects  */
+
+
+/* start A4 News */
+
+#mainNews {  
+	width: clamp(600px, 63vw, 1000px) ;  
+	margin: -20px auto; 
+	/*text-align: center; */
+	border-bottom: 10px solid #98d4d2; 
+ } 
+ 
+/* Left cards */
+.cardNews{
+	background-color: white; 
+	margin: 20px min(2vw, 10px);
+	padding: min(2vw, 10px);
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+	display: flex;	
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.cardNews:hover{ transform: scale(1.1); }
+
+.text>*{ margin: 10px; }
+
+.news-image-div{ 
+	border-radius: 10px ;
+	width: 30%;
+	overflow: hidden;
+}
+
+.imgNews{
+	width: 100%;  
+	height: 100%; 
+	display: block; 
+	object-fit: cover;  
+}
+
+.news-image-div-Right{
+	margin-left: auto;
+	order: 2;
+}
+
+
+.text{ 
+	width: 70%;  
+	}
+
+.titleNews{ 
+	text-align:left; 
+	font-weight: bold;
+	font-size:25px; 
+
+	 }
+
+.description{   
+	overflow: hidden;
+	height: 60%;
+}
+
+.read_moreNews{
+	text-decoration: none; 
+	float: right;
+	margin-right: 20px; 
+}
+
+
+/* Ende A4 News  */
+
+/* start donate and subscribtion */
+#topX { 
+	margin-top: 20px ;         
+	position: relative; 
+  
+}
+
+#contentX{   
+ 	  position: absolute;
+    top: 1%;
+    left: 5%; 
+    color: white;
+}
+
+.imgX { width:100%; opacity: 70%;}
+
+#wnyh{
+	font-weight: 900;
+	font-size: min(3vw,50px);
+}
+
+#donateBTx{
+	position: absolute;
+	background: none;
+	font-weight: 900;
+	border-radius: 8px;
+	bottom: 75%;
+    right: 5%; 
+	font-size: min(3vw,3.125rem);
+	border-color: white;
+	color: white;
+  cursor: pointer;
+}
+
+#subBTN:hover,#donateBTx:hover{
+	background-color: white;
+	color:#1b4289 ;
+}
+
+
+#subscribe-items{
+	background-color: rgba(27, 66, 137, 0.8);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	padding: min(2vw,30px);
+	margin-top: 10px;
+}
+
+#label, #email, #subBTN{ margin:20px; }
+
+#label{ font-size:25px; }
+#email{  
+	flex:1;
+	outline: none;
+	 }
+#subBTN{ 
+	background:none;
+	color: white;
+	font-size: 1.56rem;
+	cursor: pointer;
+	border-radius: 5px;
+	border-color: white;
+ }
+ 
+
+/* end donate and subscribtion */
+ 
+/* some seperators were designed here */
+hr.big {
+  border-top: 5px solid #98d4d2;
+  border-color:  #ec6f31;
+  border-radius: 3px; 
+  width: 60%;
+  margin: 30px auto;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  border-color:  #ec6f31; 
+}
+ 
+ hr.normal {
+  border-top: 1px solid  #ec6f31; 
+}
+
+hr.seperator{
+  border-top: 3px solid  #ec6f31;
+  border-radius: 3px;
+  border-color: #777; 
+  width: 8%;
+  margin: 0px auto;
+}
+
+/* start Footer */
+
+footer > div{ 
+	padding: 0px 20px ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+  }
+
+.def, .map, .contact{ 
+	padding: 0px 30px;
+	font-weight: 600;
+	font-size:1.1rem;
+	flex:1; 
+	margin: 0px 30px;
+
+	 }
+
+.def{
+ 	min-width: 22rem;
+ }
+
+.contact img {
+	max-width:100%; 
+	height:100%;
+	} 
+ 
+.link { 
+ 	margin-left:0.6rem; 
+ 	color: black;
+ } 
+
+ .links{ 
+ 	display:flex; 
+ 	align-items: center; 
+ 	text-decoration:none; 
+ }
+
+#to-top-link{
+	position: fixed; 
+	display:none  ;
+	z-index: 99;
+	bottom: 3%;
+	right: 3%;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+
+}

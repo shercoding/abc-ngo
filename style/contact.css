@@ -1,0 +1,252 @@
+
+.contact-info{
+	position: relative; 
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em auto;  
+	padding: 2rem 0;
+	width:min(850px,85vw);	
+	background: white;
+
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	border-radius: 0px 5px 5px 0px;
+				 
+}
+
+.contact-us{ 
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -10%;
+	margin: auto 0px;	
+
+	width: 35%;
+	height: 83%;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center; 
+	font-weight: 500;
+	background:  #ec6f31;
+	color: white;
+
+	border-radius: 5px 0px 0px 5px;  
+
+}
+
+.contact-us div{	
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+}
+
+.contact-us img{
+	width: 13%;
+	margin-inline: 0.5rem; 
+}
+
+.get-in-touch{  
+	height: 77%;
+	width:75%; 
+	padding-inline:1rem ;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.get-in-touch *:not(:last-child){  
+	width: min(20rem,100%);
+}
+
+.get-in-touch  h2{margin: 0;}
+
+.get-in-touch *:nth-child(n+3):nth-child(-n+5){
+	font-size: 1rem;
+	padding: 0.7rem;
+	margin: 0.3rem 0px;
+	border: none;
+	background-color: rgba(250, 240, 220,0.8);
+	border-radius: 5px;
+	outline: #ec6f31;  
+}
+
+.get-in-touch textarea{ resize: none; }
+
+ .get-in-touch input[type="button"]{
+ 	font-size: 1.3rem;
+ 	padding: 0.3rem 1.5rem;
+ 	border-radius: 1.3rem;
+ 	color: white; 
+	cursor:pointer;
+
+ 	border: none;
+ 	background-color: #ec6f31;
+ 	margin-top: 1rem;
+ }
+
+
+/* we are global section style */
+
+	.global{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;  
+	}
+
+	
+#we-are-global h1:first-child{
+		text-align:center;
+		font-weight: 700; 
+		margin-top:5vw;   
+	}
+
+
+ 
+	.global  .card{
+		width: 15rem;
+		height: 15rem; 
+		margin-inline:0.5rem ; 
+		transform-style: preserve-3d;
+
+	}
+
+	.global  .item{
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		width: 90%;
+		height: 90%;
+		margin: auto; 
+ 
+		border-radius: 0.5rem;
+		overflow: hidden;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		transition: 1s;
+		transform-origin:0%;
+
+	}
+
+	.back{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: white;
+		padding-left: 0.7rem;
+	}
+ 
+ 
+
+	.global img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.global .item div:first-child, 
+	.item div:last-child {
+		display:flex; 
+		justify-content: start;
+		align-items: center; 	 
+	} 
+
+	.global .item  span:first-of-type{
+		font-weight: 900;
+		color: red;
+	}
+
+	.global p{ 
+		font-size:1.1rem;
+		margin:0; 
+	}
+
+	.global-icons{
+		height: 2rem;
+		margin-right: 1rem;
+	}
+
+
+ @media (max-width: 600px){
+
+.contact-info{
+	display: flex;
+	flex-direction: column-reverse;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.get-in-touch{
+	width: 100%;
+	margin-bottom: -2rem;
+	justify-content:center; 
+}
+
+ .contact-us{
+ 	position: relative;
+ 	left: 0;
+ 	right: 0;
+ 	top: 3rem;
+	margin: 0px auto;
+	width: 90%;
+	border-radius: 0px 0px 5px 5px;
+
+ 	}
+ 
+
+ }
+
+ /* for devices which  have hover feature*/
+
+	@media (hover: hover){
+
+	.back{ 
+		transform: perspective(500px) rotateY(180deg);
+	}
+ 
+	.card:hover .back{
+		transform: perspective(500px) rotateY(360deg);
+	}
+	
+	.card:hover .front{
+		transform: perspective(500px) rotateY(180deg);
+	         }
+
+	}
+
+	 /* for devices which don't have hover feature*/
+
+	@media (hover: none){
+
+	.back{
+		transform: perspective(500px) rotateY(360deg);
+
+	}
+	.front{
+		transform: perspective(500px) rotateY(180deg);
+		pointer-events: none;
+	}
+
+	}
+
+
+
+
+
+
+
+
+
+
+

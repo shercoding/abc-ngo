@@ -1,0 +1,161 @@
+
+
+.last-projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	margin: auto;
+	width: min(80%, 1100px);  
+	padding: 0;
+}
+
+.last-projects .card{
+	position: relative;
+	min-width: 400px;
+	height: 550px; 
+	margin: 100px auto; 
+}
+
+.last-projects .img-div{
+	width: 90%;
+	height: 300px;
+	position: absolute;
+	top: -30%;
+	border: 3px solid white;
+	overflow: hidden;
+	margin-inline: 5%; 
+	transition: all .4s;
+}
+
+
+
+.last-projects .img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	
+}
+
+.last-projects .text{
+	position: absolute;
+	height: 80%;
+	width: 90%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: white;
+	border: 5px solid #ec6f31; 
+	border-radius: 5px; 
+	margin: auto;
+}
+
+.last-projects .text::before{
+	content: '';
+	position: absolute;
+	top: -38%;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	width: 30px;
+	height: 30px;
+	background-color: #ec6f31;
+	transform: rotateZ(45deg);
+	transition: all .4s;
+	pointer-events: none;
+}
+
+ .last-projects  .text:hover::before{
+	transform: rotateZ(270deg);
+	top: -45%;
+	}
+
+
+.last-projects .text:hover  .img-div, .last-projects .img-div:hover{
+	transform: translate(0%,-15%);  
+}
+
+.last-projects .text > h2{
+	text-align: center;
+	margin-top:38% ; 
+	margin-bottom: 0px;
+	transition: filter .4s;
+	filter: blur(15px);
+
+  }
+
+  .last-projects .text:hover h2{
+  	filter: blur(0);
+  }
+
+
+
+.last-projects .bottom{
+	width: 100%;
+	margin-top: 0px;
+	padding: 0px; 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.last-projects .bottom p{
+	height: 100px;   
+	font-size: 1.26rem;
+	padding-inline: 1rem; 
+	trnasition: all .4s ease;
+}
+
+
+
+.last-projects .project-details img {
+	width: 30%;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+}
+
+.last-projects .project-details{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2rem;
+
+}
+
+.last-projects .project-details > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center; 
+ 	padding: 1%;  
+
+}
+
+.last-projects .project-details span{
+	opacity: 8;
+	font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

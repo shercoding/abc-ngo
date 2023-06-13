@@ -1,0 +1,205 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+  
+ section{
+ 	max-width: 80rem;
+ 	display: flex;
+ 	margin: min(2rem , 4vw) auto;
+ 	border-radius: 10px; 
+
+ }
+
+section h1{
+	color: blue;
+}
+
+.donate-img{
+	width: 40%;
+	overflow: hidden;
+	border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.donate-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	
+}
+
+.donate-form{ 
+	border-radius: 0rem 1rem 1rem 0rem;
+
+	width: 60%;
+	height: 100%;
+	padding: min(3vw, 2rem );
+	background: #ec6f31;/*#98d4d2;*/
+}
+
+
+.donate-form p{
+	font-size: 1.1rem;
+}
+
+.donate-form > div{ 
+	margin:auto;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem clamp(0.2rem, 3vw, 3rem);
+	max-width: 40rem;
+	height: 100%;
+	background: white;
+}
+
+.money {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.money > div:first-child{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.money > div:first-child  input{
+	display: none;
+}
+
+  .money > div:first-child input:checked + label{
+  	color: black;
+	background: skyblue;
+ }
+
+.money > div:first-child  label{ 
+	color: white;
+	background: #ec6f31;
+	font-size: 1.4rem;
+	font-weight: 800;
+	display: inline-block;
+	margin: 0.5rem;
+	border-radius: 0.5rem;
+	cursor:pointer;
+
+	padding: 1rem;
+}
+
+.money .others{
+
+	display: flex;
+	flex-wrap: wrap; 
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.money #item5{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+#item5 + label{
+	font-size: 1.3rem;
+}
+
+.others input[type="text"]{
+		flex-grow: 1;
+		font-size: 1.6rem;
+		border: 0;
+		border-radius: 0.7rem;
+		background-color: rgba(0,0,0,0.1);
+		margin: 0.4rem 1rem;
+}
+ 
+.form{  
+	margin: 1rem 0rem;
+	display: grid; 
+	align-items:center;
+	grid-template-areas: 
+	'one'
+	'two'
+	'three'
+	'four';
+}
+
+.form input{ 
+		font-size: 1.3rem;
+		padding: 0.8rem;
+		outline: none;		 
+		border-radius: 0px;
+	}
+
+	.form > input:nth-child(1){
+		grid-area: one;
+		border-radius: 1rem 1rem 0rem 0rem;
+		border-bottom: 0px;
+	}
+	.form > input:nth-child(2){
+		grid-area: two;
+	}
+	.form div:first-of-type{grid-area: three; display: flex}
+	
+	.form div input:nth-child(1){
+		border-top: 0px;
+		border-right: 0px;
+		border-radius: 0rem 0rem 0rem 1rem; 
+	}
+	.form div input:nth-child(2){
+		border-top: 0px; 
+		border-radius: 0rem 0rem 1rem 0rem; 
+	}
+
+	.form  button { 
+		grid-area: four;
+		color:white;
+		background-color:#ec6f31;
+		margin: 1rem auto;
+		font-size: 1.2rem;
+		border-radius: 1.3rem;
+		padding: 0.4rem 1.2rem; 
+		border: none;
+		cursor: pointer;
+	}
+
+
+@media (max-width: 700px){
+
+	section{
+		position: relative;
+		flex-direction: column; 
+		margin-inline: 3vw;
+	}
+
+	.donate-img{
+		position: relative;
+		width: 100%; 
+		border-radius: 1rem 1rem 0rem 0rem;
+	}
+
+.donate-form{
+		position: relative;
+		top: -10rem;
+		width: 100%;
+		padding: 3vw;
+		border-radius: 0rem 0rem 1rem 1rem;
+	}
+
+	section img{
+		border-radius: 1rem 1rem 0rem 0rem;
+	}
+
+	.others input[type="text"]{
+		max-width:80%;
+	}
+
+}

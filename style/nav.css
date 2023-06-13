@@ -1,0 +1,189 @@
+
+#nav-placeholder
+{
+	position: sticky;  	
+	top: 0;
+	z-index:10; 
+ 	box-shadow: 0px 8px 10px rgba(0,0,0,0.5) ;
+
+}
+
+.navbar{  
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 2rem;
+	background-color: #98d4d2; 
+}
+ 
+
+.logo{
+	flex-shrink: 0;  
+}
+
+.logo-img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.links-main{  
+	flex: 1;
+	display:flex; 
+	justify-content: space-around;
+	align-items: center;
+	/*background: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.1));*/
+	background-color: #98d4d2;
+	 }
+
+.links-main ul {  
+	margin: 0;
+	padding: 0;
+	flex: 1;
+
+	display: flex;
+	justify-content: flex-end;  
+
+	list-style:none; 
+ 
+	 }
+
+.links-main ul li {
+	font-size: 1.4rem;
+	padding-inline: 1rem; 
+	display:inline-block; /*block*/
+	position: relative;
+}
+
+.links-main   a[title]::after{
+ 	content: '';
+ 	position: absolute;
+	transform:rotateZ(10deg);
+ 	bottom: 0;
+ 	top: 0;
+ 	right: 0; 
+ 	height: 70%;
+ 	margin: auto;
+ 	border: 1px solid white;
+}
+
+.links:hover{
+	color: black  ;
+	letter-spacing:0.08rem;
+} 
+.links, .donatBTN {  
+	text-decoration: none;
+
+}
+
+
+.links-main   a{
+	text-decoration: none;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.home-link{
+margin-left: auto; 
+}
+
+.donatBTN {  
+	margin-left: auto; 
+	background-color: #f9e45b; 
+	border: none; 
+	border-radius: 50px;
+	cursor: pointer; 
+	color: white;
+	padding-inline: 10px;
+	transition:  all 0.4s ease 0s; 
+}
+
+.donatBTN:hover{ 
+	background-color: #ef9273; 
+	color: white !important;
+}
+
+
+
+.toggle-button{  
+	display: none;
+	position: absolute;
+	right: 10px;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.bar{
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius:  10px;
+}
+
+.active-nabar-item a{ 
+	color: black; 
+ }
+
+
+@media (max-width: 850px){
+
+	.toggle-button{
+		display: flex;
+	}
+
+	.toggle-button{ 
+		cursor: pointer;
+		top: 35%; 
+	}
+
+
+	.links-main{ 
+		width:100%; 
+		display: none ;
+
+		top: 95%;
+		left: 0;
+		position: absolute;
+		}
+
+	.links-main.active{ 
+		display:flex; 
+		 }
+	
+	.links-main ul li{ 
+		text-align:center; 
+		margin:5px auto; 
+		 }
+
+	.navbar{
+		flex-direction: columns;
+		align-items: flex-start;
+	}
+
+	.links-main ul{
+		flex-direction: column;
+		width: 100%;
+	}
+
+/*	.donatBTN,.others1{margin: auto;}
+
+*/
+	.links-main::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;  
+	z-index: -1;
+	border: 1px solid rgb(0,0,0,0.0);
+	box-shadow: 5px 5px 10px rgb(0,0,0,1); 
+	} 
+
+
+.links-main ul li a[title]::after{
+ 	content: none;
+ 	  }
+
+}

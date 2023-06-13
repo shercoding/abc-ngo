@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="style/main.css"> 
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/donate.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+</head>
+<body>
+
+<!-- import quotes and Navbar -->
+
+
+<div id="quetes-container2"></div>
+<!--Navigation bar-->
+
+<div id="nav-placeholder"> </div>
+
+<script>
+   $(function(){ $("#quetes-container2").load("quetes.html"); });
+   $(function(){ $("#nav-placeholder").load("nav.html", function() {
+  						$('#navbar-item5').addClass('active-nabar-item');
+				});});
+
+	$(function(){ $("#footer-placeholder").load("footer.html"); });
+
+   /* this script belongs to XX-4*/
+</script>
+
+<section>
+
+	 <div class="donate-img">
+	 	<img src="pics/donate/donate.jpg">
+	 </div>
+
+	<div class="donate-form">
+		<div>
+			<h1>Make a Donation</h1>
+			<p>
+			Every donation makes a difference no matter how small. We appreciate all donations submitted and help us 100%.
+			</p>
+ 
+
+			<div class="money">
+				<div>
+					<input type="radio" name="money" class="limited"  id="item1" value="10$">
+					<label for="item1">10$</label>
+					<input type="radio" name="money" class="limited" id="item2" value="50$">
+					<label for="item2">50$</label>
+					<input type="radio" name="money" class="limited" id="item3" value="100$">
+					<label for="item3">100$</label>
+					<input type="radio" name="money" class="limited" id="item4" value="500$">
+					<label for="item4">500$</label>
+				</div>
+
+				<div class="others">
+					<input type="radio" name="money" id="item5">
+					<label for="item5">Others</label>
+					<input type="text" >
+				</div>
+
+			</div>
+
+ 
+			<div class="form">
+				<input type="text" placeholder="Cardholder Name">
+				<input type="text" placeholder="Card Number">
+				<div>
+					<input type="text" style="width:70%" placeholder="Expiration Date">
+					<input type="text" style="width:30%" placeholder="CSV">
+				</div>
+				<button type="button" id="donate-and-pay-btn"> Donate </donate> 
+			</div>
+
+		</div>
+	</div> 
+
+</section>
+
+<br>
+<hr style="width:80%;">
+<br>
+
+<!-- footer -->
+
+<footer id="footer-placeholder"> </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+<nav class="navbar">
+
+	<div class="logo">
+		<a href="index.html">
+	  		<img src="pics/ngo_logos/logo128_2.png" class="logo-img"> 
+		</a>
+	</div>
+
+	<div class="links-main">
+
+		<ul>
+			<li class=" home-link " id="navbar-item1">
+				<a title="" href="index.html" class="links">Home</a>
+			</li>
+			<li class="" id="navbar-item2">
+				<a title="" href="projects.html" class="links">Projects</a>
+			</li>
+			<li class="" id="navbar-item3">
+				<a title="" href="about.html" class="links">About</a>
+			</li>
+			<li class="" id="navbar-item4">
+				<a href="contact.html" class="links">Contact</a>
+			</li>
+			<li class="donatBTN" id="navbar-item5">
+				<a href="donate.html" >DONATE</a>
+			</li>
+		</ul>
+
+	</div>
+ 
+		<span class="toggle-button">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</span> 
+
+</nav>
+
+<script>
+
+
+
+
+// from here to A0 
+const toggelButton = document.getElementsByClassName('toggle-button')[0];
+const links_main = document.getElementsByClassName('links-main')[0]; 
+
+toggelButton.addEventListener('click', () => { 
+
+  toggelButton.classList.toggle('change');
+  links_main.classList.toggle('active');
+
+  });
+
+// A0 humburger bottun
+
+</script>

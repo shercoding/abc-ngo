@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scal=1">
+	<meta name="author" content="Sherwan">
+	<title> ABC-NGO </title>
+	<link rel="stylesheet" type="text/css" href="style/main.css"> 
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/last-news.css">
+	<link rel="stylesheet" type="text/css" href="style/home-first-section.css">
+	<link rel="stylesheet" type="text/css" href="style/last-projects.css"> 
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- this script is importet to help some functions to load external html files ( see XX-4) -->
+<!-- 	<link rel="stylesheet" type="text/css" href="style/last-projects.css"> -->
+
+</head>
+<body> 		 
+<!-- start A1 nav bar u aw nvisina sari  -->
+
+<div id="quetes-container2"></div>
+
+<!--Navigation bar-->
+<div id="nav-placeholder"> </div>
+
+<script>
+   $(function(){ $("#quetes-container2").load("quetes.html"); });
+   $(function(){ $("#nav-placeholder").load("nav.html", function() {
+			$('#navbar-item1').addClass('active-nabar-item');
+		}); });
+   $(function(){ $("#footer-placeholder").load("footer.html"); });
+   /* this script bekolngs to XX-4*/
+</script>
+
+<!--end of Navigation bar--> 
+<!-- end A1 talia navbar u nvisina sari -->
+<!-- start A2 dastpeka slide home ie projecta  -->
+
+
+
+<section class="first-section">
+
+	<div class="section-item-1">
+		<div class="first-section-text">
+			<h3>Refugee Support</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+		<div class="img-div left">
+			<img src="pics/icon/p1.svg">
+		</div>
+
+		<div class="img-div right">
+			<img src="pics/icon/p2.svg">
+		</div>
+		<div class="first-section-text">
+			<h3>Education </h3>
+			<p>
+			Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+
+	</div>
+
+	<div class="section-item-2">
+		<div class="first-section-text">
+			<h3>Child Protection</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+			<div class="img-div left">
+				<img src="pics/icon/p3.svg"> 
+			</div>
+
+			<div class="img-div right">
+				<img src="pics/icon/p4.svg"> 
+			</div>
+		<div class="first-section-text last">
+			<h3> Women Rights </h3>
+			<p>
+				Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+	</div>
+
+</section>
+
+
+
+
+
+<!-- start A3 last Projects  -->
+
+	<hr class="big">
+	
+	<p id="lastProjectCaption"> Last Projects </p> 
+
+
+<section class="last-projects">
+	
+	<div class="card">
+		<div class="text">
+			<h2> First Project</h2>
+			<div class="bottom">
+				<p>
+					Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+
+			<div class="img-div">
+				<img src="pics/pro1.jpg" class="img">
+			</div>
+
+			<div class="project-details">
+				<div>
+					<img src="pics/icon/b2.png">
+					<span> Beneficiaries </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/d.png">
+					<span> Budget </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/l.png">
+					<span> Location </span>
+					<span> 198+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="card">
+		<div class="text">
+			<h2> Second Project</h2>
+			<div class="bottom">
+				<p>
+					Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+
+			<div class="img-div">
+				<img src="pics/pro2.webp" class="img">
+			</div>
+
+			<div class="project-details">
+				<div>
+					<img src="pics/icon/b2.png">
+					<span> Beneficiaries </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/d.png">
+					<span> Budget </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/l.png">
+					<span> Location </span>
+					<span> 198+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="text">
+			<h2> Third Project</h2>
+			<div class="bottom">
+				<p>
+					Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+
+			<div class="img-div">
+				<img src="pics/pro3.jpg" class="img">
+			</div>
+
+			<div class="project-details">
+				<div>
+					<img src="pics/icon/b2.png">
+					<span> Beneficiaries </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/d.png">
+					<span> Budget </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/l.png">
+					<span> Location </span>
+					<span> 198+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="text">
+			<h2> Another Project</h2>
+			<div class="bottom">
+				<p>
+					Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+
+			<div class="img-div">
+				<img src="pics/pro4.png" class="img">
+			</div>
+
+			<div class="project-details">
+				<div>
+					<img src="pics/icon/b2.png">
+					<span> Beneficiaries </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/d.png">
+					<span> Budget </span>
+					<span> 198+</span>
+				</div>
+				<div>
+					<img src="pics/icon/l.png">
+					<span> Location </span>
+					<span> 198+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+
+
+<!-- end A3 last Projects  -->
+<hr class="big">
+
+<!-- start A4 News -->
+
+	<p id="newsCaption"> Latest News </p> 
+
+<section>
+	<div class="news-card">
+		<div class="left-text">
+			<h2> Education for every child</h2>
+			<p>
+			Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			</p>
+			<a href="#">Read more &rarr;</a>
+		</div>
+		<div class="right-img">
+			<img src="pics/news/p1.jpg"> 
+		</div>
+	</div>
+
+	<div class="news-card">
+		<div class="left-img">
+			<img src="pics/news/p2.jpg"> 
+		</div>
+		<div class="right-text">
+			<h2> Working together</h2>
+			<p>
+			Lorem ipsum dolor sit amet, cons ec tetur adip iscing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			</p>
+			<a href="#">Read more &rarr;</a>
+		</div>
+	</div>
+
+</section>
+
+<!-- Ende A4 News -->
+
+<!--  start donate and subscribtion -->
+<br>
+
+<section>
+	<div id="topX"> 
+		<div style="width: 100%;"><img src="pics\donate2.jpg" class="imgX"></div>
+		<div id="contentX">
+			<p id="wnyh">WE NEED YOUR HELP</p>
+			<p>With your help, we can provide vital 
+assistance wherever and whenever it's most needed.</p>
+			
+		</div>
+		<button id="donateBTx"> DONATE</button>
+	</div>
+
+	<div id="subscribe-items">
+		<label for="email" id="label"> Subscribe to our newsletter to receive the latest news </label>	
+		<input type="text" placeholder="Enter your Email" id="email">
+		<button id="subBTN"> SUBSCRIBE</button>
+	 </div>
+
+</section> 
+
+
+
+<!--  end donate and subscribtion -->
+
+ 
+<br>
+<hr style="width:80%;">
+<br>
+
+<!-- footer -->
+
+<footer id="footer-placeholder"> </footer>
+
+	<div id="to-top">
+		<img onclick="topFunction()" src="pics/icon/top-arrow-icon.png" title="return to top" id="to-top-link"> 
+	</div>
+
+	<!-- to top script  -->
+	<script src="script.js"></script>	
+
+
+</body> 
+</html>
